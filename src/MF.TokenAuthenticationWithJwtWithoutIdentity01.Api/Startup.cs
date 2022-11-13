@@ -41,7 +41,7 @@ namespace MF.TokenAuthenticationWithJwtWithoutIdentity01.Api
             })
             .AddJwtBearer(options =>
             {
-                options.RequireHttpsMetadata = false;
+                options.RequireHttpsMetadata = true;
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
